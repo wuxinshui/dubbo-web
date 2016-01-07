@@ -15,10 +15,42 @@
 
     <properties>
         <spring_version>4.0.3.RELEASE</spring_version>
+        <zookeeper_version>3.4.6</zookeeper_version>
+        <zkclient_version>0.3</zkclient_version>
+        <dubbo_version>2.5.4</dubbo_version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+
+            <!-- dubbo start -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>${dubbo_version}</version>
+               <!-- <exclusions>
+                    <exclusion>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring</artifactId>
+                    </exclusion>
+                </exclusions>-->
+            </dependency>
+            <!-- dubbo end -->
+
+            <!-- zookeeper start -->
+            <dependency>
+                <groupId>org.apache.zookeeper</groupId>
+                <artifactId>zookeeper</artifactId>
+                <version>${zookeeper_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.101tec</groupId>
+                <artifactId>zkclient</artifactId>
+                <version>${zkclient_version}</version>
+            </dependency>
+            <!-- zookeeper end -->
+
+
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>

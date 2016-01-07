@@ -3,6 +3,7 @@
 <html>
 <body>
 <h2>Hello World!</h2>
-<a href="${pageContext.request.contextPath}/task">点我</a>
+<a>Dubbo 远程调用 </a>${status}
+<a>对象传送成功：${dto}</a>
 </body>
 </html>
