@@ -1,6 +1,7 @@
 package com.mr.web.consumer.controller;
 
 import com.mr.web.provider.api.ITaskRemoteService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class TaskController {
 
+    @Autowired
     private ITaskRemoteService taskRemoteService;
 
     @RequestMapping("task")
@@ -18,7 +20,7 @@ public class TaskController {
         String status = "FAIL";
         status = taskRemoteService.test();
         model.addAttribute("status", status);
-        model.addAttribute("dto","aa");
+        model.addAttribute("dto", "aa");
         return "task";
     }
 }

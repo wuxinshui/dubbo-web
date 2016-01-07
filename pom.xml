@@ -28,12 +28,12 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>dubbo</artifactId>
                 <version>${dubbo_version}</version>
-               <!-- <exclusions>
+                <exclusions>
                     <exclusion>
                         <groupId>org.springframework</groupId>
                         <artifactId>spring</artifactId>
                     </exclusion>
-                </exclusions>-->
+                </exclusions>
             </dependency>
             <!-- dubbo end -->
 
