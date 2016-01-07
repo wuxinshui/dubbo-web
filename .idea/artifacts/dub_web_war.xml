@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="dub-web:war">
+    <output-path>$PROJECT_DIR$/dub-web/target</output-path>
+    <root id="archive" name="dub-web.war">
+      <element id="artifact" artifact-name="dub-web:war exploded" />
+    </root>
+  </artifact>
+</component>
